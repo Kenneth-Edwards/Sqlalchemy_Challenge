@@ -13,7 +13,7 @@ import os
 import datetime as dt
 
 #################################################
-# Database Setup
+#  Database  Setup
 #################################################
 engine = create_engine("sqlite:///Resources/hawaii.sqlite")
 conn = engine.connect()
