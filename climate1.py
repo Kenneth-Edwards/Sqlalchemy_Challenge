@@ -13,7 +13,7 @@ import os
 import datetime as dt
 
 #################################################
-#  Database  Setup
+# Database Setup
 #################################################
 engine = create_engine("sqlite:///Resources/hawaii.sqlite")
 conn = engine.connect()
@@ -36,20 +36,20 @@ app = Flask(__name__)
 @app.route("/")
 def welcome():
     return (
-        f"<h2>Welcome to the Hawaii Weather API!</h2><br/>"
+        f"<h2>Welcome to the Hawaii Weather API!</h2><br>"
         
-        f"<h4>Available API Routes:</h4><br/><br/>"
+        f"<h4>Available API Routes:</h4><br><br>"
         
         f"Hawaii Precipitation Data:"
-        f"<a href='http://127.0.0.1:5000/api/v1.0/precipitation'>/api/v1.0/precipitation</a><br/><br/>"
+        f"<a href='http://127.0.0.1:5000/api/v1.0/precipitation'>/api/v1.0/precipitation</a><br><br>"
         f"Hawaii Temperature Observation Data:"
-        f"<a href='http://127.0.0.1:5000/api/v1.0/Temp_Observations'>/api/v1.0/temperature_observations</a><br/><br/>"
+        f"<a href='http://127.0.0.1:5000/api/v1.0/Temp_Observations'>/api/v1.0/temperature_observations</a><br><br>"
         f"Hawaii Weather Stations:"
-        f"<a href='http://127.0.0.1:5000/api/v1.0/Weather_Stations'>/api/v1.0/weather_stations</a><br/><br/><br/>"      
+        f"<a href='http://127.0.0.1:5000/api/v1.0/Weather_Stations'>/api/v1.0/weather_stations</a><br><br><br>"      
         f"Hawaii Min, Avg & Max Temps from date entered until today:"
-        f"<a href='http://127.0.0.1:5000/api/v1.0/<start_date>'>/api/v1.0/start_date/<start_date><a><br/><br/>"
+        f"<a href='https://kenneth-edwards.github.io/start_date'>/api/v1.0/start_date/<start_date><a><br><br>"
         f"Hawaii Min, Avg & Max Temps for a specific date range:"
-        f"<a href='http://127.0.0.1:5000/api/v1.0/start_date/end_date/<start_date><end_date>'>/api/v1.0/start_date/end_date/<start_date><end_date><a><br/><br/>"
+        f"<a href='https://kenneth-edwards.github.io/date_range'>/api/v1.0/start_date/end_date/<start_date><end_date></a><br><br>"
     )
 ##################################################################################################
 
